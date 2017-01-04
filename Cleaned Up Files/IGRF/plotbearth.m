@@ -18,7 +18,7 @@ lon_start = 0:30:330; % Geodetic longitudes in degrees.
 alt_start = 0; % Altitude in km.
 distance = -sign(lat_start).*[30e3 70e3 150e3]; % km.
 nsteps = abs(distance)/10;
-spin = false;
+spin = true;
 
 % Get the magnetic field line points.
 lat = zeros(max(nsteps(:))+1, numel(lat_start)*numel(lon_start));
