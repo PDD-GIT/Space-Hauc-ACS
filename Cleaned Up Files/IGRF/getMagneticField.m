@@ -8,7 +8,7 @@ function mag = getMagneticField(theta, time)
     P_no_z = [P(1) P(2) 0];
     latitude = atan2d(norm(cross(P,P_no_z)),dot(P,P_no_z));
     longitude = atan2d(norm(cross(u,P_no_z)),dot(u,P_no_z));
-    mag = igrf(now, latitude, longitude, 600);
+    mag = igrf(now, latitude, longitude, 350);
 end
 %{
 

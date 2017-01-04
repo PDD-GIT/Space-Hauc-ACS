@@ -18,7 +18,7 @@ lon_start = 180; % Geodetic longitude in degrees.
 alt_start = 0; % Altitude in km.
 distance = 90e3; % km.
 nsteps = abs(distance)/1;
-spin = false;
+spin = true;
 
 % Get the magnetic field line points.
 [lat, lon, alt] = igrfline(time, lat_start, lon_start, alt_start, ...
